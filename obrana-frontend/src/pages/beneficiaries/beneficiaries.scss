@@ -1,0 +1,66 @@
+.beneficiaries {
+    display: flex;
+  
+    .beneficiariesContainer {
+      flex: 6;
+      padding: 20px;
+  
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+  
+        h1 {
+          font-size: 24px;
+          color: #555;
+        }
+  
+        .addBeneficiary {
+          padding: 10px 15px;
+          background-color: #3f51b5;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: 0.3s;
+  
+          &:hover {
+            background-color: #303f9f;
+          }
+        }
+      }
+  
+      .beneficiariesTable {
+        width: 100%;
+        border-collapse: collapse;
+  
+        th, td {
+          padding: 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+  
+        th {
+          background-color: #f4f4f4;
+          font-weight: bold;
+        }
+  
+        .status {
+          font-weight: bold;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+  
+        .active {
+          color: #4caf50;
+        }
+  
+        .pending {
+          color: #ff9800;
+        }
+      }
+    }
+  }
+  

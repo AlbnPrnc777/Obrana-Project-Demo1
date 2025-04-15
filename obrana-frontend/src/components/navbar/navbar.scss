@@ -1,0 +1,71 @@
+.navbar {
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white; // Default light mode
+  
+    // Enable dark mode
+    .dark & {
+      background-color: #222; // Dark gray for dark mode
+      color: white;
+  
+      .icon {
+        color: white;
+      }
+  
+      .connectWallet {
+        background-color: #4caf50;
+        color: white;
+  
+        &:hover {
+          background-color: #388e3c;
+        }
+      }
+    }
+  
+    .wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .items {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+    }
+  
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      color: gray;
+      cursor: pointer;
+  
+      .icon {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+  
+      .counter {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+      }
+    }
+  }
+  
